@@ -1,4 +1,4 @@
-# **Comparative Analysis of LLMs for Academic Content Summarization**
+## **Comparative Analysis of LLMs for Academic Content Summarization**
 
 The application scrapes research papers from [ArXiv](https://arxiv.org/) and generates brief summaries of the research paper abstracts using LLMs.
 
