@@ -8,7 +8,6 @@ import os
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
-
 # Initialize UserAgent for headers
 ua = UserAgent()
 userAgent = ua.random
@@ -127,10 +126,9 @@ uri = os.environ['URI_KEY']
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
 # Specify the database and collection
-db = client['my_database']  # Create/use 'my_database'
-collection = db['arxiv_collection']  # Create/use 'my_collection'
+db = client['my_database'] 
+collection = db['arxiv_collection']  
 
-# Convert DataFrame to dictionary (list of dictionaries)
 data = df_cleaned.to_dict(orient='records')
 
 # Insert the data into the MongoDB collection
@@ -170,7 +168,6 @@ print("Duplicates removed.")
 data_from_db = collection.find()
 data_list = list(data_from_db)
 df_retrieved = pd.DataFrame(data_list)
-
 
 # print(df_retrieved.columns)
 # print(df_retrieved.head(10))
