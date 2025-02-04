@@ -30,10 +30,10 @@ The results of the paired t-tests indicate whether there is a statistically sign
 Since all **p-values** are much lower than **0.05**, we reject the **null hypothesis (H0)** and conclude that there is a **significant difference** between each pair of models in terms of similarity scores. We can see that **BART performed better than the other two models**, further confirming the findings of the statistical tests.
 
 ## Visualizations of Similarity Score Distributions
-![image](https://github.com/user-attachments/assets/14c1a4df-bf4c-45bc-ae16-9b8c48fa38f9)
-
 
 ### **1. Distribution of Similarity Scores**  
+![image](https://github.com/user-attachments/assets/14c1a4df-bf4c-45bc-ae16-9b8c48fa38f9)
+
 The above plot shows the **distribution of similarity scores** for each model (**BART, T5, and PEGASUS**). It highlights key differences in how each model performs in terms of semantic similarity.
 #### **Observations:**
 - **T5 and PEGASUS:**  
