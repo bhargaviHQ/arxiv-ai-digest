@@ -19,12 +19,12 @@ def generate_summaries(texts, model_name):
     summarizer = pipeline("summarization", model=model_name)
     summaries = []
     for text in texts:
-        # Handle missing or NaN values
+        # Handle missing/NaN values
         if pd.isna(text) or not isinstance(text, str):
             summaries.append("")  # Append an empty string for invalid data
             continue
-        # Truncate text to fit within the model's token limit (e.g., 1024 tokens for most models)
-        truncated_text = text[:1024]  # Adjust based on the model's token limit
+        # Truncate text to fit within the model's token limit (1024 tokens for most models)
+        truncated_text = text[:1024] 
         summary = summarizer(truncated_text, max_length=130, min_length=30, do_sample=False)[0]['summary_text']
         summaries.append(summary)
     return summaries
