@@ -14,7 +14,7 @@ The application scrapes research papers from [ArXiv](https://arxiv.org/) and gen
 - Applied **SentenceTransformer** for **Semantic Textual Similarity (STS)**.
   - Results: **BART (0.729) outperformed T5 (0.694) and PEGASUS (0.584)**.
 
-The experiment took approximately 2 hours on a **Kaggle T4 X2 GPU**, generating summaries for **2000+ *** research paper abstracts across various categories such as **Artificial Intelligence** and **Computer Vision**. The goal was to evaluate whether these models can effectively summarize academic papers, particularly in research-intensive domains.
+The experiment took approximately 2 hours on a **Kaggle T4 X2 GPU**, generating summaries for 2000+ research paper abstracts across various categories such as **Artificial Intelligence** and **Computer Vision**. The goal was to evaluate whether these models can effectively summarize academic papers, particularly in research-intensive domains.
 
 
 ### Paired t-test Results:
