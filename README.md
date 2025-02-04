@@ -1,7 +1,6 @@
+# **Comparative Analysis of LLMs for Academic Content Summarization**
 
 The application scrapes research papers from [ArXiv](https://arxiv.org/) and generates brief summaries of the research paper abstracts using LLMs.
-
-## Paired t-test Results for Similarity Scores
 
 ### Hypotheses:
 - **Null Hypothesis (H0)**: There is no significant difference in the similarity scores between the summarization models.
